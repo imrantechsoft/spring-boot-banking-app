@@ -1,5 +1,5 @@
 # spring-boot-banking-app
 This app is a simple banking application
 
-Follow the instruction from the notes -- > **BankProjectNotes** folder
+Pleae follow the instruction from the notes to start -- > **BankProjectNotes** folder
 
