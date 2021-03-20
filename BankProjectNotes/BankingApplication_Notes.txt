@@ -69,7 +69,12 @@ Swagger UI:
 ------------
 
 
-To access the Swagger UI hit the below URIs. The URIs are specific to each microservice.
+BANKEUREKASERVER:
+
+http://localhost:8761
+
+
+To access the Swagger UI hit the below URIs. The URIs are specific to each Microservice.
 
 
 BANKPROFILESERVICE:
@@ -88,7 +93,7 @@ http://localhost:8083/swagger-ui/index.html#/
 
 
 
-NOTE: After accessing the swagger UI hit the SEED DATA rest end points for the records. 
+NOTE: After accessing the swagger UI hit the SEED DATA rest end points to create the records. 
 
 
 
@@ -107,6 +112,7 @@ NOTE: The Rest end points will route through API Gateway
 3) http://localhost:8080/profile/customers/seedData
 
 4) http://localhost:8080/profile/customers
+
 
 
 5) http://localhost:8080/profile/banks/HDFC
