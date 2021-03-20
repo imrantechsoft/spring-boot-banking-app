@@ -2,7 +2,6 @@ Hello Professionals,
 
 Happy Coding !!
 
-
 Clone the repository with the below link
 
 https://github.com/imrantechsoft
@@ -10,7 +9,6 @@ https://github.com/imrantechsoft
 			(OR)
 
 https://github.com/imrantechsoft/spring-boot-banking-app.git
-
 
 Steps:
 ------
@@ -26,10 +24,9 @@ Steps:
 5) Hit the swagger UI for the Rest API Documentation. You can hit the rest end points from the swagger UI.
 
 
-
 NOTE: Start the Spring Boot Apps in the following order given below.
 
-	  The Config Server will fetch the Apps properties from github URI : https://github.com/imrantechsoft/spring-boot-banking-app
+	 The Config Server will fetch the Apps properties from github URI : https://github.com/imrantechsoft/spring-boot-banking-app
 
 
 Banking Application
@@ -51,7 +48,6 @@ e) Bank Transaction
 f) Bank Aggregator
 
 
-
 1) BANKCONFIGSERVER
 
 2) BANKEUREKASERVER
@@ -68,7 +64,6 @@ f) Bank Aggregator
 Swagger UI:
 ------------
 
-
 BANKEUREKASERVER:
 
 http://localhost:8761
@@ -76,31 +71,24 @@ http://localhost:8761
 
 To access the Swagger UI hit the below URIs. The URIs are specific to each Microservice.
 
-
 BANKPROFILESERVICE:
 
 http://localhost:8081/swagger-ui/index.html#/
 
-
 BANKTRANSACTIONSERVICE:
 
 http://localhost:8082/swagger-ui/index.html#/
-
 
 BANKAGGREGATORSERVICE:
 
 http://localhost:8083/swagger-ui/index.html#/
 
 
-
 NOTE: After accessing the swagger UI hit the SEED DATA rest end points to create the records. 
-
-
 
 
 Hit the Rest end points with the below following order:
 --------------------------------------------------------
-
 
 NOTE: The Rest end points will route through API Gateway
 
@@ -114,7 +102,6 @@ NOTE: The Rest end points will route through API Gateway
 4) http://localhost:8080/profile/customers
 
 
-
 5) http://localhost:8080/profile/banks/HDFC
 
 RequestMethod: POST
@@ -124,8 +111,6 @@ RequestMethod: POST
     "location": "Bangalore",
     "ifscCode": "HDFC0004456"
 }
-
-
 
 6) http://localhost:8080/profile/banks/HDFC
 
@@ -137,10 +122,7 @@ RequestMethod: GET
     "ifscCode": "HDFC0004456"
 }
 
-
-
 7) http://localhost:8080/profile/banks/HDFC
-
 
 RequestMethod: PUT
 
@@ -153,7 +135,6 @@ RequestMethod: PUT
 
 8) http://localhost:8080/profile/banks/SBI/customers
 
-
 RequestMethod: POST
 
 
@@ -164,12 +145,9 @@ RequestMethod: POST
         "location": "Hyderabad"
 }
 
-
-
 9) http://localhost:8080/profile/banks/SBI/customers
 
 RequestMethod: GET
-
 
 {
     "customerList": [
@@ -187,12 +165,9 @@ RequestMethod: GET
     ]
 }
 
-
 10) http://localhost:8080/profile/customers/Imran
 
-
 RequestMethod: GET
-
 
 {
     "customerName": "Imran",
@@ -206,12 +181,9 @@ RequestMethod: GET
     }
 }
 
-
 11) http://localhost:8080/profile/banks/HDFC/customers
 
-
 RequestMethod: PUT
-
 
 {
         "customerName": "Imran",
@@ -220,30 +192,18 @@ RequestMethod: PUT
         "location": "Hyderabad"
 }
 
-
-
 12) http://localhost:8080/profile/customers/John
-
 
 RequestMethod: DELETE
 
-
-
 13) http://localhost:8080/transaction/accountDetails/John
 
-
 RequestMethod: GET
-
 
 14) http://localhost:8080/transaction/accountDetails/Imran
 
 RequestMethod: GET
 
-
-
 15) http://localhost:8080/aggregator/banks/HDFC
 
-
 RequestMethod: GET
-
-
