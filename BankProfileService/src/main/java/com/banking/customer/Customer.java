@@ -35,8 +35,4 @@ public class Customer {
 		this.location = location;
 		this.bank = new Bank(bank,"","");
 	}
-
-
-
-
 }
