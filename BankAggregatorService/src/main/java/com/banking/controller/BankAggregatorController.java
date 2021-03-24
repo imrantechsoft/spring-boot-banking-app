@@ -37,7 +37,7 @@ public class BankAggregatorController {
 		List<Customer> custList = bankCustomers.getCustomerList();
 		List<CustomerAccountDetails> custAccDetailsList = new ArrayList<CustomerAccountDetails>();
 		for (Customer cust : custList) {
-			Account acc = restTemplate.getForObject("http://BANKTRANSACTION/transaction/accountDetails/"+cust.getCustomerName(), Account.class);
+			Account acc = restTemplate.getForObject("http://BANKTRANSACTION/transaction/accounts/"+cust.getCustomerName(), Account.class);
 			custAccDetailsList.add(new CustomerAccountDetails(cust, acc));
 		}
 		System.out.println("Exiting BANKAGGREGATOR getAccountDetails method");
